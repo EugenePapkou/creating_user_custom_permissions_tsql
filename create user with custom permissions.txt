@@ -1,0 +1,48 @@
+USE [Test]
+GO
+CREATE USER [User2] FOR LOGIN [TestLogin4]
+GO
+USE [Test]
+GO
+ALTER ROLE [Manager] ADD MEMBER [User2]
+GO
+use [Test]
+GO
+GRANT ALTER ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT CONTROL ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT DELETE ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT INSERT ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT REFERENCES ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT TAKE OWNERSHIP ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT UPDATE ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT VIEW CHANGE TRACKING ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+GRANT VIEW DEFINITION ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
+use [Test]
+GO
+DENY SELECT ON [SCHEMA_3].[TableUser1] TO [User2]
+GO
